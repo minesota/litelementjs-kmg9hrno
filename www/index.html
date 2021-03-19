@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<script type="module" src="./dist/index.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+	<main class="w3-container">
+		<h1>Demo</h1>
+		<idate-input name="idiomas1" label="Junio" AY='2016-17|9' value='2 feb'></idate-input>
+		<p style="color:blue">Made with <a href="https://webcomponents.dev">WebComponents.dev</a></p>
+	</main>
+</body>
+
+<script>
+	input = document.querySelector('idate-input')
+  input.size=30
+	input.label='Septiembre'
+	input.addEventListener('change', (ev)=> alert('change:\n'+ JSON.stringify(ev.detail,null,'\t')))
+</script>
+
+</html>
